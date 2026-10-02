@@ -42,7 +42,7 @@ class GenGPT2(tf.keras.Model):
 
 
 model = GenGPT2(param)
-model.build(input_shape=(param.batch_size, param.maxlen))
+model.build(input_shape=(param.batch_size, 1))
 model.summary()
 
 gpt2_init_weights_from_checkpoint(model, model_path, param.n_layer)
