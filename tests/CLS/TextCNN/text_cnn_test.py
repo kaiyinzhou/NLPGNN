@@ -29,7 +29,7 @@ load = TFLoader(maxlen,
                   task='cls',
                   epoch=1)
 
-model = TextCNN.TextCNN(maxlen, vocab_size, embedding_dims, class_num)
+model = TextCNN(maxlen, vocab_size, embedding_dims, class_num)
 
 f1score = Metric.SparseF1Score(average="macro")
 precsionscore = Metric.SparsePrecisionScore(average="macro")

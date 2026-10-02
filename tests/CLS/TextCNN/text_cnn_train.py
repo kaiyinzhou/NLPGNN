@@ -27,7 +27,7 @@ load = TFLoader(maxlen, batch_size, task='cls', epoch=3)
 #                                       vocab_size,
 #                                       embedding_dims)
 
-model = TextCNN.TextCNN(maxlen,
+model = TextCNN(maxlen,
                         vocab_size,
                         embedding_dims,
                         class_num,
